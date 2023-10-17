@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+  }
+  label{
+    color: rgb(255, 255, 255);
+  }
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 100vh;
+  }
+  
+form {
+    background: linear-gradient(135deg,rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    margin-top: -70px;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: left;
+  }
+
+img{
+  max-width: 200px;
+  background-size: cover;
+}
+  
+form label {
+    letter-spacing: 1px;
+    display:block;
+    margin-bottom: 10px;
+  }
+  
+form input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: transparent;
+    letter-spacing: 2px;
+  }
+
+form input #dob::placeholder{
+  color: rgb(176, 29, 29);
+  padding-left: 10px;
+}
+form input::placeholder{
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+}
+
+form select{
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: transparent;
+  letter-spacing: 2px;
+}
+
+button{
+  padding: 6px;
+  margin-left: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+

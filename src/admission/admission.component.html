@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+</head>
+<body>
+    <div class="center">
+        <!-- <img [src]="back" alt=""> -->
+        <form action="get" id="form1" #addForm="ngForm" (ngSubmit)="postMethod(addForm.value)">
+            <label>Name : <input type="text" placeholder=" Enter Name" ngModel name="name" required></label>
+            <label>DOB : <input type="date" id="dob" placeholder="Enter Date of Birth" ngModel name="dob" required></label>
+            <label>Age : <input type="number" placeholder="Enter Age" ngModel name="age" required></label>
+            <label>Gender:
+                <select ngModel name="gender">
+                    <option value="">Please select one…</option>
+                    <option value="female">Female</option>
+                    <option value="male" >Male</option>
+                </select>
+            </label>
+                
+            <label>Father Name : <input type="text" placeholder="Enter Father Name" name="fname" ngModel required></label>
+            <label>Email: <input type="email" placeholder="Enter Email" ngModel name="email" required></label>
+            <label>Address : <input type="text" placeholder="Enter Address" ngModel name="address" required></label>
+            <label>Phone no : <input type="text" maxlength="10" placeholder="Enter Phone No" ngModel name="phone" required></label>
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+            
+            
+        </form>
+
+        <!-- <h1>Get Values</h1>
+        <li>{{getJsonValue | json}}</li>-->
+
+        <!-- <h1>Post Values</h1>
+        <li>{{postJsonValue | json}}</li>  -->
+    </div>
+    
+</body>
+</html>
